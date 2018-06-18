@@ -1,20 +1,22 @@
-body {
-    overflow: hidden;
-    height: 100%;
+// font
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,500&subset=cyrillic');
 
-    opacity: 0;
+// dependencies
+@import "~compass-mixins/lib/compass/css3";
+@import "~susy/sass/susy";
+@import "~breakpoint-sass/stylesheets/breakpoint";
+@import '~normalize.css';
+@import "~resets.css/resets.css";
 
-    transition: opacity .2s ease;  
-}
+// base
+@import "base/mixins";
+@import "base/variables";
+@import "base/global";
+@import "base/fonts";
 
-body[data-loaded="true"] {
-    overflow: inherit;
-    overflow-x: hidden;
-    height: inherit;
+// layout
+@import "layout/animations";
+@import "layout/helpers";
+@import "layout/icons";
 
-    opacity: 1;
-    
-    #preloader {
-    display: none;
-    }
-}

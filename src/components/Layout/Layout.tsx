@@ -7,6 +7,7 @@ import { Input } from "./Input";
 import { Preloader } from "../Preloader";
 import { StyledInput } from "./StyledInput";
 import { NotFoundRoute } from "./NotFoundRoute";
+import { SectionMain } from "../Sections";
 
 export interface LayoutProps {
     domain: string;
@@ -26,22 +27,7 @@ export class Layout extends React.Component<LayoutProps> {
                     <meta charSet="UTF-8" />
                     <meta name="viewport" content="width=device-width,initial-scale=1" />
                 </Helmet>
-                <h1>Hello, {this.props.domain}</h1>
-                <menu>
-                    <li>
-                        <Link to="/styled">Styled</Link>
-                    </li>
-                    <li>
-                        <Link to="/simple">Simple</Link>
-                    </li>
-                </menu>
-                <section>
-                    <Switch>
-                        <Route path="/styled" component={StyledInput} />
-                        <Route path="/simple" component={Input} />
-                        <Route render={NotFoundRoute} />
-                    </Switch>
-                </section>
+                <SectionMain />
             </Preloader>
         );
     }
