@@ -42,9 +42,9 @@ export class Footer extends React.Component {
                             </div>
                             <div className={hashClasses["footer-aside"]}>
                                 <div className={hashClasses["contacts"]}>
-                                    <span>(044) 470-85-55</span>
-                                    <span>info@zanimaj.org.ua</span>
-                                    <span>zanimaj.org.ua</span>
+                                    <a href="tel:+380444708555">(044) 470-85-55</a>
+                                    <a href="mailto:info@zanimaj.org.ua">info@zanimaj.org.ua</a>
+                                    <a href="mailto:zanimaj.org.ua">zanimaj.org.ua</a>
                                 </div>
                                 <div className={hashClasses["working-hours"]}>
                                     <span>Ответим на ваши вопросы</span>
