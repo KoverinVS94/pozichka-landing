@@ -1,0 +1,55 @@
+/*
+Footer style
+*/
+
+.footer {
+  padding: 2.813em 0 2.5em 0;
+  background: #65bc1f;
+
+  .main-footer {
+
+    @include span(8.8 of 12 inside no-gutter);
+    }
+
+  .aside-footer {
+    
+    @include span(3.2 of 12 inside no-gutter);
+
+    .contacts {
+      width: 190px;
+      float: right;
+    }
+
+    .hour-work {
+      width: 190px;
+      float: right;
+    }
+  }
+}
+
+.under-footer {
+  padding: 1.563em 0;
+  background: #52ad0a;
+
+  .icon {
+    display: inline-block;
+    margin-right: .938em;
+    vertical-align: middle;
+  }
+
+  .adress {
+    display: inline-block;
+    vertical-align: middle;
+
+    span {
+      display: block;
+      color: #fff;
+      font-size: .875em;
+
+      &:first-child {
+        font-size: 1em;
+        font-weight: 700;
+      }
+    }
+  }
+}
