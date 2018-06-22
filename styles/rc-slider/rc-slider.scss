@@ -55,16 +55,16 @@
     top: 30px;
     color: #909090;
     font-size: 11px;
-  }
 
-  .left-dot {
+    &-left {
 
-    left: 0;
-  }
+      left: 0;
+    }
 
-  .right-dot {
-    
-    right: 0;
+    &-right {
+      
+      right: 0;
+    }
   }
 }
 

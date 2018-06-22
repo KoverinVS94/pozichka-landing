@@ -3,53 +3,49 @@ Footer style
 */
 
 .footer {
-  padding: 2.813em 0 2.5em 0;
-  background: #65bc1f;
 
-  .main-footer {
+  .footer-top {
+    padding: 2.813em 0 2.5em 0;
+    background: #65bc1f;
 
-    @include span(8.8 of 12 inside no-gutter);
-    }
+    .footer-main {
 
-  .aside-footer {
-    
-    @include span(3.2 of 12 inside no-gutter);
+      @include span(10 of 12 inside no-gutter);
+      padding-right: 138px;
+      }
 
-    .contacts {
-      width: 190px;
-      float: right;
-    }
+    .footer-aside {
+      
+      @include span(2 of 12 inside no-gutter);
 
-    .hour-work {
-      width: 190px;
-      float: right;
     }
   }
-}
 
-.under-footer {
-  padding: 1.563em 0;
-  background: #52ad0a;
-
-  .icon {
-    display: inline-block;
-    margin-right: .938em;
-    vertical-align: middle;
-  }
-
-  .adress {
-    display: inline-block;
-    vertical-align: middle;
-
-    span {
-      display: block;
-      color: #fff;
-      font-size: .875em;
-
-      &:first-child {
-        font-size: 1em;
-        font-weight: 700;
+  .footer-bottom {
+    padding: 1.563em 0;
+    background: #52ad0a;
+  
+    .icon {
+      display: inline-block;
+      margin-right: .938em;
+      vertical-align: middle;
+    }
+  
+    .adress {
+      display: inline-block;
+      vertical-align: middle;
+  
+      span {
+        display: block;
+        color: #fff;
+        font-size: .875em;
+  
+        &:first-child {
+          font-size: 1em;
+          font-weight: 700;
+        }
       }
     }
   }
 }
+

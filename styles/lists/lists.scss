@@ -30,6 +30,7 @@ Lists style
     text-align: center;
 
     .icon {
+      display: block;
       position: relative;
       margin-bottom: 1.5em;
 
@@ -135,7 +136,7 @@ Lists style
 }
 
 .section-receipt {
-  
+
   .list {
 
     .list-item {
