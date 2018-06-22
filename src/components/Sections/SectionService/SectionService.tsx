@@ -46,10 +46,10 @@ export class SectionService extends React.Component {
                                 В вашем личном кабинете <strong>вы можете проверить</strong>:
                             </p>
                             <ul>
-                                <li><span>Статус заявки,</span></li>
-                                <li><span>Историю кредитов,</span></li>
-                                <li><span>Финансовые операции,</span></li>
-                                <li><span>Документы.</span></li>
+                                <li>Статус заявки,</li>
+                                <li>Историю кредитов,</li>
+                                <li>Финансовые операции,</li>
+                                <li>Документы.</li>
                             </ul>
                             <p>
                                 При появлении финансовых трудностей,
