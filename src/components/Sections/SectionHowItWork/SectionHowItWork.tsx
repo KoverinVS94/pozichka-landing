@@ -49,7 +49,7 @@ export class SectionHowItWork extends React.Component {
                                 <p>
                                     При появлении финансовых трудностей,
                                     вы в любое время можете кредитной истории,
-                                    от цели, наличия справки. 
+                                    от цели, наличия справки.
                                 </p>
                             </li>
                             <li className={hashClasses["list-item"]}>
