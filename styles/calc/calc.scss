@@ -52,15 +52,16 @@
       
       @include span(5.25 of 12 inside no-gutter);
 
-      @include breakpoint($mobile-p) {
+      @include breakpoint($mobile) {
         width: 100%;
         float: none;
+      }
+
+      @include breakpoint($mobile-p) {
         margin-top: 50px;
       }
 
       @include breakpoint($mobile-l) {
-        width: 100%;
-        float: none;
         text-align: center;
         margin-top: 40px; 
       }
