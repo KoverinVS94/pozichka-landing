@@ -113,9 +113,7 @@ export class Calculator extends React.Component<{}, CalculatorState> {
                         </OnMobileTablet>
                     </div>
                     <div className={hashClasses["text-percent"]}>
-                        <div className={hashClasses["wrap-icon"]}>
-                            <i className={`${hashClasses["icon"]} ${hashClasses["icon-info"]}`} />
-                        </div>
+                        <i className={`${hashClasses["icon"]} ${hashClasses["icon-info"]}`} />
                         <p>Наша APR (максимальная годовая процентная ставка) составляет 638,75%.</p>
                     </div>
                 </div>

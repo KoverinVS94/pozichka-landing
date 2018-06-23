@@ -95,21 +95,26 @@
         font-size: .875em;
         line-height: 18px;
 
-        @include breakpoint($mobile-p) {
+        @include breakpoint($mobile) {
           width: 100%;
           float: none;
+        }
+
+        @include breakpoint($mobile-p) {
           text-align: center;
         }
 
         @include breakpoint($mobile-l) {
           display: block;
-          margin: 20px auto 0 auto;
-          float: none;
+          margin: 20px 0 0 0;
+          padding: 0;
         }
 
         @include breakpoint($tablet-p) {
           display: block;
-          margin: 20px auto 0 auto;
+          width: 100%;
+          margin: 20px 0 0 0;
+          padding: 0;
           float: none;
         }
       }
@@ -156,22 +161,27 @@
     }
 
     .text-percent {
-      display: table;
       float: right;
+
+      @include justify-content;
+
+      @include valign-center;
+
 
       @include breakpoint($mobile) {
         float: none;
         margin: 10px auto 0 auto;
       }
-      
-      .wrap-icon {
-        display: table-cell;
-        vertical-align: middle;
+
+      @include breakpoint($mobile-p) {
+        width: 280px;
       }
-      
+
+      @include breakpoint($mobile-l) {
+        width: 290px;
+      }
 
       p {
-        display: table-cell;
         width: 265px;
         padding-left: .938em;
 

@@ -41,6 +41,7 @@
       box-shadow: 1px 1px 7px rgba(31, 31, 31, 0.48);
       background-color: #d554ec;
       touch-action: pan-x;
+      z-index: 100;
     }
 
     .rc-slider-step {
