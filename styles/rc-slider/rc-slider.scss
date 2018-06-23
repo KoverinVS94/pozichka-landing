@@ -56,11 +56,7 @@
     color: #909090;
     font-size: 11px;
 
-    @include breakpoint($mobile-l) {
-      top: 20px;
-    }
-
-    @include breakpoint($mobile-p) {
+    @include breakpoint($mobile) {
       top: 20px;
     }
 
