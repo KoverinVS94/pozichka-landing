@@ -7,6 +7,22 @@
   position: relative;
   z-index: 10;
 
+  @include breakpoint($mobile-p) {
+    padding: 0 10px;
+  }
+
+  @include breakpoint($mobile-l) {
+    padding: 0 10px;
+  }
+
+  @include breakpoint($tablet) {
+    padding: 0 50px;
+  }
+
+  @include breakpoint($laptop-small) {
+    padding: 0 50px;
+  }
+
   .calc-main {
     position: relative;
     padding: 2.5em;
@@ -18,9 +34,29 @@
 
     @include clearfix;
 
+    @include breakpoint($mobile-p) {
+
+      padding: 2.5em 1.5em;
+    }
+
     .calc-content {
 
       @include span(6.75 of 12 inside no-gutter);
+
+      @include breakpoint($mobile-p) {
+        width: 100%;
+        float: none;
+      }
+
+      @include breakpoint($mobile-l) {
+        width: 100%;
+        float: none;
+      }
+
+      @include breakpoint($tablet-p) {
+        width: 100%;
+        float: none;
+      }
     }
 
     .calc-aside {
@@ -29,8 +65,38 @@
       
       @include span(5.25 of 12 inside no-gutter);
 
+      @include breakpoint($mobile-p) {
+        width: 100%;
+        float: none;
+        margin-top: 50px;
+      }
+
+      @include breakpoint($mobile-l) {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-top: 40px; 
+      }
+
+      @include breakpoint($tablet-p) {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-top: 40px; 
+      }
+
       .btn-action {
         margin-bottom: 1em;
+
+        @include breakpoint($mobile-l) {
+          display: block;
+          margin: 0 auto;
+        }
+
+        @include breakpoint($tablet-p) {
+          display: block;
+          margin: 0 auto;
+        }
       }
 
       p {
@@ -42,6 +108,23 @@
         font-size: .875em;
         line-height: 18px;
 
+        @include breakpoint($mobile-p) {
+          width: 100%;
+          float: none;
+          text-align: center;
+        }
+
+        @include breakpoint($mobile-l) {
+          display: block;
+          margin: 20px auto 0 auto;
+          float: none;
+        }
+
+        @include breakpoint($tablet-p) {
+          display: block;
+          margin: 20px auto 0 auto;
+          float: none;
+        }
       }
     }
   }
@@ -61,17 +144,43 @@
 
       float:left;
 
+      @include breakpoint($mobile-p) {
+        float: none;
+        text-align: center;
+      }
+
+      @include breakpoint($mobile-l) {
+        float: none;
+        text-align: center;
+      }
+
       span {
 
         &:nth-of-type(1) {
           color: #a6a6a6;
           font-size: 1.25em;
+
+          @include breakpoint ($mobile-p) {
+            display: block;
+          }
+
+          @include breakpoint ($mobile-l) {
+            display: block;
+          }
         }
 
         &:nth-of-type(2) {
           color: #636363;
           font-size: 2.063em;
           padding: 0 0 0 .625em;
+
+          @include breakpoint ($mobile-p) {
+            padding-left: 0;
+          }
+
+          @include breakpoint ($mobile-l) {
+            padding-left: 0;
+          }
         }
       }
     }
@@ -79,6 +188,16 @@
     .text-percent {
       display: table;
       float: right;
+
+      @include breakpoint($mobile-p) {
+        float: none;
+        margin: 10px auto 0 auto;
+      }
+
+      @include breakpoint($mobile-l) {
+        float: none;
+        margin: 10px auto 0 auto;
+      }
       
       .wrap-icon {
         display: table-cell;
@@ -102,8 +221,22 @@
   .form-group {
     display: table;
 
+    @include clearfix;
+
+    @include breakpoint($mobile-l) {
+      display: block;
+    }
+
+    @include breakpoint($mobile-p) {
+      display: block;
+    }
+
     &:not(:last-child) {
       margin-bottom: 1.875em;
+
+      @include breakpoint($mobile-p) {
+        margin-bottom: 2.875em;
+      }
     }
 
     .wrap-label,
@@ -116,6 +249,18 @@
   
     .wrap-label {
       width: 20%;
+
+      @include breakpoint($mobile-l) {
+        display: block;
+        width: 40%;
+        float: left;
+      }
+
+      @include breakpoint($mobile-p) {
+        display: block;
+        width: 40%;
+        float: left;
+      }
   
       .form-label {
         color: #636363;
@@ -125,11 +270,41 @@
   
     .wrap-rc-slider {
       width: 60%;
+
+      @include breakpoint($mobile-l) {
+        display: block;
+        width: 100%;
+        float: left;
+        margin-top: 20px;
+      }
+
+      @include breakpoint($mobile-p) {
+        display: block;
+        width: 100%;
+        float: left;
+        margin-top: 20px;
+      }
     }
   
     .input-group {
       width: 20%;
       padding-left: 2.188em;
+
+      @include breakpoint($mobile-l) {
+        display: block;
+        width: 60%;
+        padding-left: 0;
+        float: right;
+        text-align: right;
+      }
+
+      @include breakpoint($mobile-p) {
+        display: block;
+        width: 60%;
+        padding-left: 0;
+        float: right;
+        text-align: right;
+      }
   
       .form-control {
         width: 138px;
@@ -138,34 +313,44 @@
     }
   
     .credit-sum {
-      
-      &:after {
-        display: block;
-        position: absolute;
-        top: 13px;
-        left: 125px;
 
-        color: #bbbaba;
-        font-size: 1em;
-        pointer-events: none;
-        content: 'грн.';
+      .input-wrap {
+        position: relative;
+        display: inline-block;
+              
+        &:after {
+          display: block;
+          position: absolute;
+          top: 13px;
+          left: 90px;
+
+          color: #bbbaba;
+          font-size: 1em;
+          pointer-events: none;
+          content: 'грн.';
+        }
       }
     }
   
     .credit-term {
 
-      &:after {
-        display: block;
-        position: absolute;
-        top: 13px;
-        left: 95px;
-        
-        color: #bbbaba;
-        font-size: 1em;
-        pointer-events: none;
-        content: 'дней';
+      .input-wrap {
+        position: relative;
+        display: inline-block;
+
+        &:after {
+          display: block;
+          position: absolute;
+          top: 13px;
+          left: 65px;
+          
+          color: #bbbaba;
+          font-size: 1em;
+          pointer-events: none;
+          content: 'дней';
+        }
       }
-  
+
       .form-control {
   
         padding-right: 2.857em;
