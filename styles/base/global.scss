@@ -56,18 +56,15 @@ p {
     margin: 0 0 4.063em 2.5em;
     color: $color-white;
 
-    @include breakpoint($mobile-p) {
+    @include breakpoint($mobile) {
       width: 100%;
-      margin: 0 0 0 10px;
+      padding: 0 40px 0 40px;
+      text-align: center;
+      margin: 0 0 25px 0;
     }
 
-    @include breakpoint($tablet) {
+    @include breakpoint($tablet-laptop-sm) {
 
-      margin-left: 5.625em;
-    }
-
-    @include breakpoint($laptop-small) {
-      
       margin-left: 5.625em;
     }
   }
@@ -136,8 +133,9 @@ p {
         display: none;
       }
 
-      @include breakpoint($tablet-p) {
+      @include breakpoint($tablet-laptop-sm) {
         top: -408px;
+        width: 747px;
         height: 509px;
         background-image: url('images/illustration-tablet.png');
       }

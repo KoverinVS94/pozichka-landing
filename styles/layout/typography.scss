@@ -9,11 +9,13 @@ h1.title {
   text-transform: uppercase;
 
   @include breakpoint($mobile-p) {
-    font-size: 28px;
+    font-size: 30px;
+    margin-bottom: 8px;
   }
 
   @include breakpoint($mobile-l) {
     font-size: 33px;
+    margin-bottom: 8px;
   }
 
   @include breakpoint($tablet-p) {
@@ -37,7 +39,6 @@ h3.title {
 
   @include breakpoint($mobile-p) {
     font-size: 20px;
-    margin-bottom: 40px;
   }
 
   @include breakpoint($mobile-l) {

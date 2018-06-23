@@ -7,19 +7,11 @@
   position: relative;
   z-index: 10;
 
-  @include breakpoint($mobile-p) {
+  @include breakpoint($mobile) {
     padding: 0 10px;
   }
 
-  @include breakpoint($mobile-l) {
-    padding: 0 10px;
-  }
-
-  @include breakpoint($tablet) {
-    padding: 0 50px;
-  }
-
-  @include breakpoint($laptop-small) {
+  @include breakpoint($tablet-laptop-sm) {
     padding: 0 50px;
   }
 
@@ -43,12 +35,7 @@
 
       @include span(6.75 of 12 inside no-gutter);
 
-      @include breakpoint($mobile-p) {
-        width: 100%;
-        float: none;
-      }
-
-      @include breakpoint($mobile-l) {
+      @include breakpoint($mobile) {
         width: 100%;
         float: none;
       }
@@ -140,16 +127,15 @@
 
     @include clearfix;
 
+    @include breakpoint($mobile-p) {
+      padding: 20px;
+    }
+
     .sum-return {
 
       float:left;
 
-      @include breakpoint($mobile-p) {
-        float: none;
-        text-align: center;
-      }
-
-      @include breakpoint($mobile-l) {
+      @include breakpoint($mobile) {
         float: none;
         text-align: center;
       }
@@ -159,28 +145,12 @@
         &:nth-of-type(1) {
           color: #a6a6a6;
           font-size: 1.25em;
-
-          @include breakpoint ($mobile-p) {
-            display: block;
-          }
-
-          @include breakpoint ($mobile-l) {
-            display: block;
-          }
         }
 
         &:nth-of-type(2) {
           color: #636363;
           font-size: 2.063em;
           padding: 0 0 0 .625em;
-
-          @include breakpoint ($mobile-p) {
-            padding-left: 0;
-          }
-
-          @include breakpoint ($mobile-l) {
-            padding-left: 0;
-          }
         }
       }
     }
@@ -189,12 +159,7 @@
       display: table;
       float: right;
 
-      @include breakpoint($mobile-p) {
-        float: none;
-        margin: 10px auto 0 auto;
-      }
-
-      @include breakpoint($mobile-l) {
+      @include breakpoint($mobile) {
         float: none;
         margin: 10px auto 0 auto;
       }
@@ -223,11 +188,7 @@
 
     @include clearfix;
 
-    @include breakpoint($mobile-l) {
-      display: block;
-    }
-
-    @include breakpoint($mobile-p) {
+    @include breakpoint($mobile) {
       display: block;
     }
 
@@ -250,13 +211,7 @@
     .wrap-label {
       width: 20%;
 
-      @include breakpoint($mobile-l) {
-        display: block;
-        width: 40%;
-        float: left;
-      }
-
-      @include breakpoint($mobile-p) {
+      @include breakpoint($mobile) {
         display: block;
         width: 40%;
         float: left;
@@ -271,14 +226,7 @@
     .wrap-rc-slider {
       width: 60%;
 
-      @include breakpoint($mobile-l) {
-        display: block;
-        width: 100%;
-        float: left;
-        margin-top: 20px;
-      }
-
-      @include breakpoint($mobile-p) {
+      @include breakpoint($mobile) {
         display: block;
         width: 100%;
         float: left;
@@ -290,15 +238,7 @@
       width: 20%;
       padding-left: 2.188em;
 
-      @include breakpoint($mobile-l) {
-        display: block;
-        width: 60%;
-        padding-left: 0;
-        float: right;
-        text-align: right;
-      }
-
-      @include breakpoint($mobile-p) {
+      @include breakpoint($mobile) {
         display: block;
         width: 60%;
         padding-left: 0;

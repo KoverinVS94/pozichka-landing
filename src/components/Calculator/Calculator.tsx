@@ -40,7 +40,7 @@ export class Calculator extends React.Component<{}, CalculatorState> {
                                 </div>
                                 <OnMobile>
                                     <div className={`${hashClasses["input-group"]} ${hashClasses["credit-sum"]}`}>
-                                        <div className={hashClasses["test"]}>
+                                        <div className={hashClasses["input-wrap"]}>
                                             <CalculatorInput type="number" className={hashClasses["form-control"]} />
                                         </div>
                                     </div>
@@ -88,7 +88,7 @@ export class Calculator extends React.Component<{}, CalculatorState> {
                                 </div>
                                 <OnTabletDesktop>
                                     <div className={`${hashClasses["input-group"]} ${hashClasses["credit-term"]}`}>
-                                        <div className={hashClasses["test"]}>
+                                        <div className={hashClasses["input-wrap"]}>
                                             <CalculatorInput type="number" className={hashClasses["form-control"]} />
                                         </div>
                                     </div>
