@@ -135,19 +135,10 @@ p {
 
       @include breakpoint($tablet-laptop-sm) {
         top: -408px;
+        right: -45px;
         width: 747px;
         height: 509px;
         background-image: url('images/illustration-tablet.png');
-      }
-
-      @include breakpoint($tablet) {
-
-        right: -45px;
-      }
-
-      @include breakpoint($laptop-small) {
-
-        right: -45px;
       }
     }
   }

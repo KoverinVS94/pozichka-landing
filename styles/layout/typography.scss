@@ -8,13 +8,8 @@ h1.title {
   margin-bottom: .8em;
   text-transform: uppercase;
 
-  @include breakpoint($mobile-p) {
+  @include breakpoint($mobile) {
     font-size: 30px;
-    margin-bottom: 8px;
-  }
-
-  @include breakpoint($mobile-l) {
-    font-size: 33px;
     margin-bottom: 8px;
   }
 
