@@ -40,7 +40,6 @@ p {
 .section-main {
   background: $color-green;
   padding: 9.813em 0 12em 0;
-<<<<<<< HEAD
 
   @include breakpoint($mobile-p) {
 
@@ -51,8 +50,6 @@ p {
 
     padding: 25px 0 50px 0;
   }
-=======
->>>>>>> master
 
   .overlay {
     width: 455px;

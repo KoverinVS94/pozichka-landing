@@ -64,7 +64,6 @@
       z-index: 20;
       
       @include span(5.25 of 12 inside no-gutter);
-<<<<<<< HEAD
 
       @include breakpoint($mobile-p) {
         width: 100%;
@@ -85,8 +84,6 @@
         text-align: center;
         margin-top: 40px; 
       }
-=======
->>>>>>> master
 
       .btn-action {
         margin-bottom: 1em;
@@ -337,7 +334,6 @@
   
     .credit-term {
 
-<<<<<<< HEAD
       .input-wrap {
         position: relative;
         display: inline-block;
@@ -355,20 +351,6 @@
         }
       }
 
-=======
-      &:after {
-        display: block;
-        position: absolute;
-        top: 13px;
-        left: 95px;
-        
-        color: #bbbaba;
-        font-size: 1em;
-        pointer-events: none;
-        content: 'дней';
-      }
-  
->>>>>>> master
       .form-control {
   
         padding-right: 2.857em;
